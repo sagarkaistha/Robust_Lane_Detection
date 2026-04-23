@@ -14,7 +14,6 @@ A ready-to-run inference cell is included at the bottom of `lightweight-cnn.ipyn
 2. Set `IMAGE_PATH` and `WEIGHTS_PATH` in the config block (defaults already point to `road.jpg` and `lightweight_cnn_best.pth`)
 3. Run the inference cell — outputs are saved as `lane_mask.png` and `lane_overlay.png`
 
-> **Note:** The checkpoint was saved as a dict. The cell handles this automatically by extracting `model_state` from the `.pth` file.
 
 ---
 
