@@ -6,6 +6,18 @@
 
 ---
 
+## 🧪 Try It — Run Inference on the Lightweight CNN
+
+A ready-to-run inference cell is included at the bottom of `lightweight-cnn.ipynb`. It loads the saved checkpoint and runs the model on `road.jpg` (included in the repo root), producing a binary lane mask and a green overlay visualization.
+
+1. Open `lightweight-cnn.ipynb`
+2. Set `IMAGE_PATH` and `WEIGHTS_PATH` in the config block (defaults already point to `road.jpg` and `lightweight_cnn_best.pth`)
+3. Run the inference cell — outputs are saved as `lane_mask.png` and `lane_overlay.png`
+
+> **Note:** The checkpoint was saved as a dict. The cell handles this automatically by extracting `model_state` from the `.pth` file.
+
+---
+
 ## 📌 Overview
 
 Lane detection is one of the most critical components in advanced driver assistance systems (ADAS) and autonomous driving. Lane departures account for approximately **51% of all fatal car crashes** in the United States, resulting in an estimated **19,000 deaths** annually (Federal Highway Administration, 2023).
@@ -134,6 +146,8 @@ All models perform **pixel-wise binary classification** (lane vs. background).
 | Night | 0.13 | 0.23 | 0.095 |
 | **Mean** | **0.207** | **0.329** | 0.127 |
 
+Training curves and per-scenario evaluation charts are saved in `lightweight_CNN_results/`.
+
 ### U-Net
 
 | Scenario | IoU | Prec | Rec | F1 |
@@ -164,9 +178,17 @@ All models perform **pixel-wise binary classification** (lane vs. background).
 
 ```
 ├── docs/
-├── lightweight-cnn.ipynb      # Lightweight CNN training & evaluation
-├── lightweight_cnn_best.pth   # Best Lightweight CNN checkpoint (Val IoU = 0.2075)
+│   ├── Presentation.pdf
+│   └── Proposal.pdf
+├── lightweight_CNN_results/
+│   ├── scenario_eval.png          # Per-scenario grouped bar chart
+│   ├── scenario_results.csv       # Per-scenario IoU & F1 scores
+│   ├── training_curves.png        # Loss / IoU / F1 over epochs
+│   └── training_history.csv      # Raw training metrics per epoch
 ├── .gitignore
+├── lightweight-cnn.ipynb          # Training, evaluation & inference
+├── lightweight_cnn_best.pth       # Best checkpoint (Val IoU = 0.2075, epoch 9)
+├── road.jpg                       # Example image for inference
 └── README.md
 ```
 
