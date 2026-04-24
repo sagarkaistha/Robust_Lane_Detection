@@ -9,9 +9,13 @@
 
 ### Run Inference on the Logistic Regression Model
 Notebook link: https://www.kaggle.com/code/nishantsuresh1/logistic-regression-nishant-sagar-kateryna
+
 Run Sections 1 and 2: Import and helper functions.
+
 Skip Sections 3, 5, 6, and 7.
+
 Run Sections 8 and 9.
+
 
 Required dataset inputs (must be attached to the notebook):
 CULane dataset: manideep1108/culane
@@ -26,16 +30,26 @@ A ready-to-run inference cell is included at the bottom of `lightweight-cnn.ipyn
 
 ### Run Inference on the U-Net Model
 Notebook link: https://www.kaggle.com/code/katlysytsyna/u-net-nishantsuresh-katerynalysytsyna-sagarkaitha/edit
+
 Cell 1 — Preprocessing: Loads the CULane dataset, defines preprocessing functions, builds image-mask pairs, and creates the DataLoader.
+
 Cell 2 — Model Definition: Defines the DoubleConv block and U-Net architecture (31M parameters).
+
 Cell 3 — Validation Set: Loads the CULane validation split and creates the validation DataLoader.
+
 Cell 4 — Loss Function: Defines the combined BCE + Dice loss.
+
 Cell 5 — Load Saved Model: Loads the pretrained weights from the best checkpoint (epoch 4). Path: /kaggle/input/datasets/katlysytsyna/unet-model/unet_best.pth
+
 Cell 6 — Testing & Visualization: Runs inference on all 9 CULane test scenarios (normal, crowd, highlight, shadow, no line, arrow, curve, crossroad, night), computes IoU/F1/Precision/Recall per scenario, and displays prediction visualizations.
 
+
 Skip: Between Cells 4 and 5: The training cell (NUM_EPOCHS = 7) — the model is already trained and saved.
+
 Required dataset inputs (must be attached to the notebook):
+
 CULane dataset: manideep1108/culane
+
 Saved model weights: katlysytsyna/unet-model
 
 ---
