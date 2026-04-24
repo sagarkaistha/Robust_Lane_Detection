@@ -219,15 +219,20 @@ Training curves and per-scenario evaluation charts are saved in `lightweight_CNN
 │   ├── Presentation.pdf
 │   └── Proposal.pdf
 ├── lightweight_CNN_results/
-│   ├── scenario_eval.png          # Per-scenario grouped bar chart
-│   ├── scenario_results.csv       # Per-scenario IoU & F1 scores
-│   ├── training_curves.png        # Loss / IoU / F1 over epochs
-│   └── training_history.csv      # Raw training metrics per epoch
+│   ├── scenario_eval.png        # Per-scenario grouped bar chart
+│   ├── scenario_results.csv     # Per-scenario IoU & F1 scores
+│   ├── training_curves.png      # Loss / IoU / F1 over epochs
+│   └── training_history.csv     # Raw training metrics per epoch
 ├── .gitignore
-├── lightweight-cnn.ipynb          # Training, evaluation & inference
-├── lightweight_cnn_best.pth       # Best checkpoint (Val IoU = 0.2075, epoch 9)
-├── road.jpg                       # Example image for inference
-└── README.md
+├── README.md
+├── graphs.ipynb                 # Figures using all models' data
+├── lightweight-cnn.ipynb        # Training, evaluation & inference
+├── lightweight_cnn_best.pth     # CNN: Best checkpoint Model (Val IoU = 0.2075, epoch 9)
+├── logistic-regression.ipynb    # Training, evaluation & inference
+├── lr_best.pkl                  # Logistic Regression: Best LR model (C=0.0001)
+├── road.jpg                     # CNN: Example image for inference
+├── scaler.pkl                   # Logistic Regression: StandardScaler fitted on training data
+└── u-net.ipynb                  # U-Net training, evaluation & inference
 ```
 
 ---
