@@ -18,7 +18,9 @@ Run Sections 8 and 9.
 
 
 Required dataset inputs (must be attached to the notebook):
+
 CULane dataset: manideep1108/culane
+
 Saved model weights: nishantsuresh1/lr-hog/lr_best.pkl and nishantsuresh1/lr-hog/scaler.pkl
 
 ### Run Inference on the Lightweight CNN Model
