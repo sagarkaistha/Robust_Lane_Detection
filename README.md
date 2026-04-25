@@ -10,7 +10,7 @@
 ### Run Inference on the Logistic Regression Model
 Notebook link: https://www.kaggle.com/code/nishantsuresh1/logistic-regression-nishant-sagar-kateryna
 
-Run on Kaggle:
+Run on Kaggle (Notebook pre-loaded with required datasets and models):
 
 Run Sections 1 and 2: Import and helper functions.
 
@@ -32,12 +32,13 @@ A ready-to-run inference cell is included at the bottom of `lightweight-cnn.ipyn
 2. Set `IMAGE_PATH` and `WEIGHTS_PATH` in the config block (defaults already point to `road.jpg` and `lightweight_cnn_best.pth`)
 3. Run the inference cell — outputs are saved as `lane_mask.png` and `lane_overlay.png`
 
-## Model Weights
-Download `unet_best.pth` from the [Releases page](https://github.com/sagarkaistha/Robust_Lane_Detection/releases) 
 ### Run Inference on the U-Net Model
 Notebook link: https://www.kaggle.com/code/katlysytsyna/u-net-nishantsuresh-katerynalysytsyna-sagarkaitha/edit
 
-Run on Kaggle:
+#### Model Weights
+Download `unet_best.pth` from the [Releases page](https://github.com/sagarkaistha/Robust_Lane_Detection/releases) 
+
+Run on Kaggle (Notebook pre-loaded with required datasets and models):
 
 Cell 1 — Preprocessing: Loads the CULane dataset, defines preprocessing functions, builds image-mask pairs, and creates the DataLoader.
 
