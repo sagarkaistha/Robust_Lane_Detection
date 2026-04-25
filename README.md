@@ -62,7 +62,7 @@ Saved model weights: katlysytsyna/unet-model
 
 Lane detection is one of the most critical components in advanced driver assistance systems (ADAS) and autonomous driving. Lane departures account for approximately **51% of all fatal car crashes** in the United States, resulting in an estimated **19,000 deaths** annually (Federal Highway Administration, 2023).
 
-This project frames lane detection as **pixel-wise binary semantic segmentation** — each image pixel is classified as either `lane` or `background`. Three complementary models of increasing complexity are trained and evaluated on the [CULane dataset](https://xingangpan.github.io/projects/CULane.html) across nine diverse driving scenarios.
+This project frames lane detection as **pixel-wise binary semantic segmentation** — each image pixel is classified as either `lane` or `background`. Three complementary models of increasing complexity are trained and evaluated on the [CULane dataset](https://xingangpan.github.io/projects/CULane.html) across nine diverse driving scenarios. For this project, for convenience and to use Kaggle Notebook, we use [CULane dataset](https://www.kaggle.com/datasets/manideep1108/culane).
 
 ---
 
