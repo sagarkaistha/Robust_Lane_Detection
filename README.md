@@ -234,6 +234,7 @@ Training curves and per-scenario evaluation charts are saved in `lightweight_CNN
 ├── lr_best.pkl                  # Logistic Regression: Best LR model (C=0.0001)
 ├── road.jpg                     # CNN: Example image for inference
 ├── scaler.pkl                   # Logistic Regression: StandardScaler fitted on training data
+├── unet_best.pth                # U-Net: Best checkpoint — not in repo, download from Releases page
 └── u-net.ipynb                  # U-Net training, evaluation & inference
 ```
 
