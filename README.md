@@ -113,7 +113,7 @@ All models perform **pixel-wise binary classification** (lane vs. background).
 | Model | Type | Input | Library | Mean IoU | Mean F1 |
 |-------|------|-------|---------|----------|---------|
 | Logistic Regression | Baseline | 326 HOG features from 32×32 patch | scikit-learn | **0.500** | **0.657** |
-| Lightweight CNN | Shallow DNN | 3×256×512 RGB image | PyTorch | 0.207 | 0.329 |
+| Lightweight CNN | Shallow DNN | 3×256×512 RGB image | PyTorch | 0.199 | 0.319 |
 | U-Net | Deep DNN | 3×256×512 RGB image | PyTorch | 0.365 | 0.494 |
 
 ### Why Semantic Segmentation?
@@ -184,7 +184,8 @@ All models perform **pixel-wise binary classification** (lane vs. background).
 | Shadow | 0.17 | 0.28 | 0.110 |
 | No Line | 0.16 | 0.27 | 0.110 |
 | Night | 0.13 | 0.23 | 0.095 |
-| **Mean** | **0.207** | **0.329** | 0.127 |
+| **Mean** | **0.199** | **0.319** | 0.120 |
+Excluding Cross from Mean measures.
 
 Training curves and per-scenario evaluation charts are saved in `lightweight_CNN_results/`.
 
@@ -201,8 +202,8 @@ Training curves and per-scenario evaluation charts are saved in `lightweight_CNN
 | No Line | 0.148 | 0.509 | 0.172 | 0.239 |
 | Night | 0.107 | 0.359 | 0.119 | 0.157 |
 | Crossroad | 0.000 | 0.000 | 0.000 | 0.000 |
-| **Mean** | **0.365** | **0.577** | **0.386** | **0.494** |
-
+| **Mean** | **0.365** | **0.649** | **0.434** | **0.494** |
+Excluding Cross from Mean measures.
 > U-Net reaches **96% of published state-of-the-art** on the Normal scenario (IoU 0.614 vs. SOTA 0.64).
 
 ---
