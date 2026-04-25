@@ -12,7 +12,7 @@ Notebook link: https://www.kaggle.com/code/nishantsuresh1/logistic-regression-ni
 
 Run Sections 1 and 2: Import and helper functions.
 
-Skip Sections 3, 5, 6, and 7.
+Skip Sections 3, 4, 5, 6, and 7 which deal with building patches and training.
 
 Run Sections 8 and 9.
 
@@ -39,13 +39,13 @@ Cell 1 — Preprocessing: Loads the CULane dataset, defines preprocessing functi
 
 Cell 2 — Model Definition: Defines the DoubleConv block and U-Net architecture (31M parameters).
 
-Cell 3 — Validation Set: Loads the CULane validation split and creates the validation DataLoader.
+Cell 3 — DataLoaders: Builds both the training and validation DataLoaders.
 
 Cell 4 — Loss Function: Defines the combined BCE + Dice loss.
 
-Cell 5 — Load Saved Model: Loads the pretrained weights from the best checkpoint (epoch 4). Path: /kaggle/input/datasets/katlysytsyna/unet-model/unet_best.pth
+Cell 5 — Load Saved Model: Loads the pretrained weights from the best checkpoint. Path: /kaggle/input/datasets/katlysytsyna/unet-model/unet_best.pth
 
-Cell 6 — Testing & Visualization: Runs inference on all 9 CULane test scenarios (normal, crowd, highlight, shadow, no line, arrow, curve, crossroad, night), computes IoU/F1/Precision/Recall per scenario, and displays prediction visualizations.
+Cell 6 — Testing & Visualization: Runs inference on all 9 CULane test scenarios (normal, crowd, highlight, shadow, no line, arrow, curve, cross, night), computes IoU/F1/Precision/Recall per scenario, and displays prediction visualizations.
 
 
 Skip: Between Cells 4 and 5: The training cell (NUM_EPOCHS = 7) — the model is already trained and saved.
