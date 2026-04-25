@@ -88,7 +88,7 @@ Collected in Beijing by CUHK & SenseTime. Resolution: **1640×590**.
 | 6 | Arrow | Arrow markings |
 | 7 | No Line | Unmarked roads |
 | 8 | Night | Low-light conditions |
-| 9 | Intersection | Complex areas |
+| 9 | Cross | Complex areas |
 
 ### Annotations
 - Per-pixel segmentation labels (`0` = background, `1–4` = lanes)
@@ -156,7 +156,7 @@ All models perform **pixel-wise binary classification** (lane vs. background).
 
 ## Results
 
-### Logistic Regression
+### Logistic Regression *(mean excludes Cross)*
 
 | Scenario | IoU | F1 |
 |----------|-----|----|
@@ -171,13 +171,13 @@ All models perform **pixel-wise binary classification** (lane vs. background).
 | Cross | FPR = 38.65% | — |
 | **Mean** | **0.500** | **0.657** |
 
-### Lightweight CNN
+### Lightweight CNN *(mean excludes Cross)*
 
 | Scenario | IoU | F1 | F1−IoU |
 |----------|-----|-----|--------|
 | Normal | 0.32 | 0.48 | 0.155 |
 | Curve | 0.27 | 0.41 | 0.145 |
-| Intersection | 0.27 | 0.41 | 0.145 |
+| Cross | 0.27 | 0.41 | 0.145 |
 | Crowded | 0.20 | 0.32 | 0.120 |
 | Arrow | 0.17 | 0.28 | 0.150 |
 | Highlight | 0.17 | 0.28 | 0.110 |
@@ -185,11 +185,10 @@ All models perform **pixel-wise binary classification** (lane vs. background).
 | No Line | 0.16 | 0.27 | 0.110 |
 | Night | 0.13 | 0.23 | 0.095 |
 | **Mean** | **0.199** | **0.319** | 0.120 |
-Excluding Cross from Mean measures.
 
 Training curves and per-scenario evaluation charts are saved in `lightweight_CNN_results/`.
 
-### U-Net
+### U-Net *(mean excludes Cross)*
 
 | Scenario | IoU | Prec | Rec | F1 |
 |----------|-----|------|-----|----|
@@ -201,9 +200,9 @@ Training curves and per-scenario evaluation charts are saved in `lightweight_CNN
 | Highlight | 0.313 | 0.669 | 0.372 | 0.466 |
 | No Line | 0.148 | 0.509 | 0.172 | 0.239 |
 | Night | 0.107 | 0.359 | 0.119 | 0.157 |
-| Crossroad | 0.000 | 0.000 | 0.000 | 0.000 |
+| Cross | 0.000 | 0.000 | 0.000 | 0.000 |
 | **Mean** | **0.365** | **0.649** | **0.434** | **0.494** |
-Excluding Cross from Mean measures.
+
 > U-Net reaches **96% of published state-of-the-art** on the Normal scenario (IoU 0.614 vs. SOTA 0.64).
 
 ---
