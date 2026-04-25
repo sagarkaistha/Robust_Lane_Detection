@@ -10,6 +10,8 @@
 ### Run Inference on the Logistic Regression Model
 Notebook link: https://www.kaggle.com/code/nishantsuresh1/logistic-regression-nishant-sagar-kateryna
 
+Run on Kaggle:
+
 Run Sections 1 and 2: Import and helper functions.
 
 Skip Sections 3, 4, 5, 6, and 7 which deal with building patches and training.
@@ -34,6 +36,8 @@ A ready-to-run inference cell is included at the bottom of `lightweight-cnn.ipyn
 Download `unet_best.pth` from the [Releases page](https://github.com/sagarkaistha/Robust_Lane_Detection/releases) 
 ### Run Inference on the U-Net Model
 Notebook link: https://www.kaggle.com/code/katlysytsyna/u-net-nishantsuresh-katerynalysytsyna-sagarkaitha/edit
+
+Run on Kaggle:
 
 Cell 1 — Preprocessing: Loads the CULane dataset, defines preprocessing functions, builds image-mask pairs, and creates the DataLoader.
 
