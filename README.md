@@ -30,10 +30,9 @@ A ready-to-run inference cell is included at the bottom of `lightweight-cnn.ipyn
 2. Set `IMAGE_PATH` and `WEIGHTS_PATH` in the config block (defaults already point to `road.jpg` and `lightweight_cnn_best.pth`)
 3. Run the inference cell — outputs are saved as `lane_mask.png` and `lane_overlay.png`
 
-** note: ## Model Weights
+## Model Weights
 Download `unet_best.pth` from the [Releases page](https://github.com/sagarkaistha/Robust_Lane_Detection/releases) 
 and place it in the `models/` directory before running inference.
-
 ### Run Inference on the U-Net Model
 Notebook link: https://www.kaggle.com/code/katlysytsyna/u-net-nishantsuresh-katerynalysytsyna-sagarkaitha/edit
 
